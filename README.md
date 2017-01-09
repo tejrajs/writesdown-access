@@ -19,6 +19,10 @@ backend/config/main.php
 'components' => [
     'authManager' => [
         'class' => 'yii\rbac\DbManager', // only support DbManager
+        'assignmentTable'=> '{{%auth_assignment}}',
+       	'itemChildTable'=> '{{%auth_item_child}}',
+       	'itemTable'=> '{{%auth_item}}',
+       	'ruleTable'=> '{{%auth_rule}}',
     ],
 ],
 ```
